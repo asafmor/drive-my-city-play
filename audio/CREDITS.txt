@@ -1,0 +1,23 @@
+Audio credits (public/audio)
+
+CC BY 3.0 (attribution required)
+- engine_idle.ogg, engine_low.ogg, engine_mid.ogg, engine_high.ogg
+  "Maserati Quattroporte - engine and exhaust sound (YouTube y9DZtxQVQF4)"
+  by Luxury Car Video (YouTube), via Wikimedia Commons, CC BY 3.0
+  https://commons.wikimedia.org/wiki/File:Maserati_Quattroporte_-_engine_and_exhaust_sound_(YouTube_y9DZtxQVQF4).opus
+  https://creativecommons.org/licenses/by/3.0/
+  Changes: trimmed to short steady-RPM segments, looped with crossfade, mono, loudness-normalized.
+
+CC0 (no attribution required, credited as courtesy)
+- skid.ogg    BigSoundBank "Screeching Tires #1/#2/#3" by Dorian CLAIR
+              https://bigsoundbank.com/screeching-tires-1-s2368.html https://bigsoundbank.com/screeching-tires-2-s2369.html https://bigsoundbank.com/screeching-tires-3-s2370.html
+- wind.ogg    BigSoundBank "Wind" by Joseph SARDIN  https://bigsoundbank.com/wind-s0595.html
+- amb_day.ogg mix of BigSoundBank "Birds in the City #2", "Street and Roads", "Parisian park, children's games" by Joseph SARDIN
+              https://bigsoundbank.com/birds-in-the-city-2-s3576.html https://bigsoundbank.com/street-and-roads-s0608.html https://bigsoundbank.com/parisian-park-children-games-s1082.html
+- amb_night.ogg BigSoundBank "Campaign at night #3" by Joseph SARDIN  https://bigsoundbank.com/campaign-at-night-3-s1469.html
+- car_pass.ogg BigSoundBank "Car (Arrival, Stop, Departure)" by Joseph SARDIN  https://bigsoundbank.com/car-arrival-stop-departure-s0187.html
+- horn.ogg    BigSoundBank "Recent Car Horn #2" by DenisChardonnet  https://bigsoundbank.com/recent-car-horn-2-s0258.html
+- impact.ogg  BigSoundBank "Fall 2 sheet steel bars #1" by Joseph SARDIN https://bigsoundbank.com/fall-2-sheet-steel-bars-1-s1776.html
+              + Kenney "Impact Sounds" impactSoft_heavy_004  https://kenney.nl/assets/impact-sounds
+- bump.ogg    Kenney "Impact Sounds" impactSoft_heavy_000  https://kenney.nl/assets/impact-sounds
+BigSoundBank licence: https://bigsoundbank.com/licenses.html
