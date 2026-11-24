@@ -8,7 +8,7 @@
   <link rel="icon" href="data:,">
   <link rel="preload" href="./fonts/BarlowCondensed-ExtraBold.ttf" as="font" type="font/ttf" crossorigin>
   <link rel="preload" href="./fonts/Rubik.ttf" as="font" type="font/ttf" crossorigin>
-  <script type="module" crossorigin src="./assets/index-DRP_K3ke.js"></script>
+  <script type="module" crossorigin src="./assets/index-CTUEHi76.js"></script>
   <link rel="stylesheet" crossorigin href="./assets/index-DxW9hxIQ.css">
 </head>
 <body>
@@ -23,7 +23,7 @@
       <div class="bar"><i id="load-bar"></i></div>
       <div class="row"><span id="load-msg">Loading</span><span id="load-pct">0%</span></div>
     </div>
-    <div class="legal">Map data © OpenStreetMap contributors · Imagery © Esri · Key art generated with an AI image model</div>
+    <div class="legal">Map data © OpenStreetMap contributors · Contains modified Copernicus Sentinel data 2026 · Key art generated with an AI image model</div>
   </div>
 
   <div id="ui" hidden>
@@ -85,7 +85,7 @@
         <div class="g-cls">Pedestrian</div>
         <div class="g-make">Or Yam · Or Akiva</div>
         <div class="g-model" id="a-name"></div>
-        <div class="g-spec" style="line-height:1.5;margin-top:14px">Walk the sidewalks, the park and the roundabouts; the traffic stops for you. Your car stays at the curb: press <kbd>F</kbd> next to it to drive.</div>
+        <div class="g-spec" style="line-height:1.5;margin-top:14px">Walk the sidewalks, the park and the roundabouts; the traffic stops for you. Your car stays at the curb: press <kbd>F</kbd> next to it, or next to any other car, to drive.</div>
         <div class="g-stats" id="a-cams"></div>
         <button class="cta" id="a-go">Walk <svg viewBox="0 0 24 24"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
       </div>
@@ -121,15 +121,15 @@
           <dt><kbd>A</kbd><kbd>D</kbd></dt><dd>Steer</dd><dt><kbd class="w">Space</kbd></dt><dd>Handbrake</dd>
           <dt><kbd>C</kbd></dt><dd>Camera: chase, far, cockpit</dd><dt><kbd>L</kbd></dt><dd>Headlights</dd>
           <dt><kbd>N</kbd></dt><dd>Horn</dd><dt><kbd>R</kbd></dt><dd>Reset onto the road</dd>
-          <dt><kbd>P</kbd></dt><dd>Autopilot tour</dd><dt><kbd>F</kbd></dt><dd>Get out of / into the car</dd><dt><kbd>M</kbd></dt><dd>Sound on/off</dd><dt><kbd class="w">Esc</kbd></dt><dd>Pause</dd></dl>
-          <h3 style="margin-top:22px">On foot</h3><dl><dt><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></dt><dd>Walk (Shift runs)</dd><dt><kbd class="w">Space</kbd></dt><dd>Jump</dd><dt><kbd>Q</kbd><kbd>E</kbd></dt><dd>Turn the camera (or the mouse: click to capture)</dd><dt><kbd>C</kbd></dt><dd>Camera: third person, shoulder, first person, top down</dd></dl></div>
+          <dt><kbd>P</kbd></dt><dd>Autopilot tour</dd><dt><kbd>F</kbd></dt><dd>Get out / into any car</dd><dt><kbd>M</kbd></dt><dd>Sound on/off</dd><dt><kbd class="w">Esc</kbd></dt><dd>Pause</dd></dl>
+          <h3 style="margin-top:22px">On foot</h3><dl><dt><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd></dt><dd>Walk (Shift sprints)</dd><dt><kbd class="w">Space</kbd></dt><dd>Jump</dd><dt><kbd>Q</kbd><kbd>E</kbd></dt><dd>Turn the camera (or the mouse: click to capture)</dd><dt><kbd>C</kbd></dt><dd>Camera: third person, shoulder, first person, top down</dd></dl></div>
         <div><h3>Gamepad</h3><dl>
           <dt><kbd class="pad">RT</kbd></dt><dd>Accelerate</dd><dt><kbd class="pad">LT</kbd></dt><dd>Brake, hold to reverse</dd>
           <dt><kbd class="pad">L</kbd></dt><dd>Steer (left stick)</dd><dt><kbd class="pad r">A</kbd></dt><dd>Handbrake</dd>
           <dt><kbd class="pad r">Y</kbd></dt><dd>Camera</dd><dt><kbd class="pad">LB</kbd></dt><dd>Headlights</dd>
           <dt><kbd class="pad">RB</kbd></dt><dd>Horn</dd><dt><kbd class="pad r">X</kbd></dt><dd>Reset onto the road</dd>
-          <dt><kbd class="pad r">B</kbd></dt><dd>Get out of / into the car</dd><dt><kbd class="pad">☰</kbd></dt><dd>Pause</dd></dl>
-          <h3 style="margin-top:22px">On foot</h3><dl><dt><kbd class="pad">L</kbd></dt><dd>Walk (RT runs)</dd><dt><kbd class="pad">R</kbd></dt><dd>Look</dd><dt><kbd class="pad r">A</kbd></dt><dd>Jump</dd><dt><kbd class="pad r">Y</kbd></dt><dd>Camera</dd></dl></div>
+          <dt><kbd class="pad r">B</kbd></dt><dd>Get out / into any car</dd><dt><kbd class="pad">☰</kbd></dt><dd>Pause</dd></dl>
+          <h3 style="margin-top:22px">On foot</h3><dl><dt><kbd class="pad">L</kbd></dt><dd>Walk (RT sprints)</dd><dt><kbd class="pad">R</kbd></dt><dd>Look</dd><dt><kbd class="pad r">A</kbd></dt><dd>Jump</dd><dt><kbd class="pad r">Y</kbd></dt><dd>Camera</dd></dl></div>
       </div>
     </section>
 
@@ -137,7 +137,7 @@
       <div class="crumb">CREDITS</div>
       <div class="panel credits"><ul>
         <li><b>Map data</b> © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap contributors</a>. The world data is derived from OpenStreetMap and available under the <a href="https://opendatacommons.org/licenses/odbl/1-0/" target="_blank" rel="noopener">Open Database License (ODbL)</a></li>
-        <li><b>Imagery</b> Esri World Imagery (Vantor, Oct 2023) · <b>Elevation</b> <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener">AWS Terrain Tiles</a>: SRTM and GMTED2010 terrain data courtesy of the U.S. Geological Survey; ETOPO1 terrain data, U.S. National Oceanic and Atmospheric Administration</li>
+        <li><b>Imagery</b> Sentinel-2: Contains modified Copernicus Sentinel data 2026 (via the Microsoft Planetary Computer) · <b>Elevation</b> <a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener">AWS Terrain Tiles</a>: SRTM and GMTED2010 terrain data courtesy of the U.S. Geological Survey; ETOPO1 terrain data, U.S. National Oceanic and Atmospheric Administration</li>
         <li><b>Cars</b> <a href="https://sketchfab.com/models/57bf6cc56931426e87494f554df1dab6" target="_blank" rel="noopener">Ferrari 458 Italia</a> by vicent091036 (via three.js examples) · <a href="https://sketchfab.com/3d-models/2015-hyundai-tucson-7674a3bd168a451daf73fc0a33d39589" target="_blank" rel="noopener">Hyundai Tucson</a>, <a href="https://sketchfab.com/3d-models/2011-dacia-renault-duster-30bc2e09de66426bb67be72c95fa2476" target="_blank" rel="noopener">Dacia Duster</a>, <a href="https://sketchfab.com/3d-models/2017-mini-countryman-8d5fd459a54d4a529c2be4c7ac444b01" target="_blank" rel="noopener">Mini Countryman</a>, <a href="https://sketchfab.com/3d-models/2014-fiat-ducato-8a651ad182414bb0a8b6c6d8d5bd7c01" target="_blank" rel="noopener">Fiat Ducato</a> by razor24 · <a href="https://sketchfab.com/3d-models/mazda-3-8655b41265824913b45612cdd85090aa" target="_blank" rel="noopener">Mazda 3</a> by dakshrajput2020 · <a href="https://sketchfab.com/3d-models/2009-chevrolet-aveo-0b2cf39c664043ccbdb5fa0261ae5644" target="_blank" rel="noopener">Chevrolet Aveo</a> by creativelion</li>
         <li><b>Props</b> <a href="https://sketchfab.com/3d-models/transit-bus-two-service-doors-variant-80ccd0ba61af4c0cbc862db81b85a3e1" target="_blank" rel="noopener">bus</a> by kurtismedia · <a href="https://sketchfab.com/3d-models/electric-kick-scooter-566854b2a6d44940826305abcce68bd0" target="_blank" rel="noopener">scooter</a> by joshua.advityinfomedia · <a href="https://sketchfab.com/3d-models/old-red-bicycle-577376dfd2f142359dbac143a49a2489" target="_blank" rel="noopener">bicycle</a> by patrakeevasveta · <a href="https://sketchfab.com/3d-models/city-bench-973507d6b4e44265887f8feffa6de13e" target="_blank" rel="noopener">bench</a> by matejbiskup97 · <a href="https://sketchfab.com/3d-models/garbage-container-hh6HI5dnOK2IOfERAPHJF7OhZRy" target="_blank" rel="noopener">dumpster</a> by 3DHaupt</li>
         <li><b>Motorbikes</b> <a href="https://sketchfab.com/3d-models/moped-derbi-ds-50-scooter-5e3ba0954ffc4a8f853c86cb7fdaa91b" target="_blank" rel="noopener">Derbi DS-50</a> by jake.martinez · <a href="https://sketchfab.com/3d-models/vespa-px125-d8d0022e70d048b4a87f7248655f73bf" target="_blank" rel="noopener">Vespa PX125</a> by alban · <a href="https://sketchfab.com/3d-models/akt-tt-ds-200-repainted-c32f7b87090d4ce4b10c76e844dc86cd" target="_blank" rel="noopener">AKT TT DS 200</a> and <a href="https://sketchfab.com/3d-models/z1000-2014-70cecfa5568347428c5ad72e9a156be9" target="_blank" rel="noopener">Kawasaki Z1000</a> by EmanuelRestrepoVelez · <a href="https://sketchfab.com/3d-models/motorcycle-helmet-6c4c23305d8148ef9717799274bdde85" target="_blank" rel="noopener">helmet</a> by zakyora</li>

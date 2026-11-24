@@ -14,8 +14,11 @@ OpenStreetMap
   https://opendatacommons.org/licenses/odbl/1-0/
   Changes: projected to local metres and combined with local survey corrections; one street renamed.
 
-Imagery (world/ground.jpg, world/far.jpg, world/hor.jpg)
-  Esri World Imagery (Vantor, Oct 2023). Imagery © Esri and its data providers.
+Sentinel-2 imagery (world/ground_mask.png, world/far_s2.jpg, world/hor_s2.jpg)
+  Contains modified Copernicus Sentinel data 2026 (scene S2C_MSIL2A_20261110T082151, read through the Microsoft Planetary Computer).
+  Copernicus Sentinel data is free and open (EU Regulation 1159/2013 and the Sentinel data policy).
+  Changes: processed into the game's ground mask and far/horizon textures (tools/s2ground.mjs); ground_mask.png also uses
+  OpenStreetMap land-use polygons (ODbL, above).
 
 Elevation (world/terrain.bin, world/far.bin, world/hor.bin)
   AWS Terrain Tiles (Tilezen/Mapzen), https://registry.opendata.aws/terrain-tiles/
@@ -140,6 +143,16 @@ models/props/helmet.glb
 People (models/peds/*.glb): Microsoft Rocketbox Avatar Library, MIT licence (text in section 5),
   https://github.com/microsoft/Microsoft-Rocketbox
   Changes: converted to glTF, hair-card textures cleaned up, extra animation clips added.
+
+2b. Photoreal textures, HDRIs and models
+========================================
+
+hdri/clouds.jpg
+  "Kloofendal 38d Partly Cloudy (Pure Sky)" by Greg Zaal (original), Jarod Guest (sky edits)
+  Source: https://polyhaven.com/a/kloofendal_38d_partly_cloudy_puresky
+  Licence: CC0-1.0 https://creativecommons.org/publicdomain/zero/1.0/
+  Changes: cloud density and brightness extracted from the 8K tonemapped JPG (tools/clouds.mjs): top hemisphere re-projected to a zenith-centred polar 2048x2048, the HDRI's sun and glow removed, R = density, G = brightness
+
 
 3. Sounds (audio/)
 ==================
