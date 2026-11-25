@@ -9,10 +9,13 @@ offered under an open licence.
 ===========================================
 OpenStreetMap
   Map data © OpenStreetMap contributors, https://www.openstreetmap.org/copyright
-  world/world.json (roads, buildings, land use, trees and street furniture) is a database derived from
-  OpenStreetMap. It is made available under the Open Database License (ODbL) 1.0:
-  https://opendatacommons.org/licenses/odbl/1-0/
-  Changes: projected to local metres and combined with local survey corrections; one street renamed.
+  These files are databases derived from OpenStreetMap, made available under the Open Database License (ODbL) 1.0,
+  https://opendatacommons.org/licenses/odbl/1-0/:
+    world/world.json: roads, buildings, land use, trees and street furniture
+    world/skyline.json: distant building footprints and heights
+    world/lights.bin: distant night lights placed from land use
+  Changes: all are projected to local metres. world.json is combined with local survey corrections and one street is
+  renamed; skyline.json keeps only footprints and heights; lights.bin holds points sampled from the land-use areas.
 
 Sentinel-2 imagery (world/ground_mask.png, world/far_s2.jpg, world/hor_s2.jpg)
   Contains modified Copernicus Sentinel data 2026 (scene S2C_MSIL2A_20261110T082151, read through the Microsoft Planetary Computer).
@@ -110,11 +113,6 @@ models/props/dumpster.glb
   Source: https://sketchfab.com/3d-models/garbage-container-hh6HI5dnOK2IOfERAPHJF7OhZRy
   Changes: rescaled to metres, re-oriented, simplified, normals rebuilt, textures re-encoded to 1024 px WebP; texture hue-shifted from blue to green
 
-models/props/bench.glb
-  "City Bench" by matejbiskup97
-  Source: https://sketchfab.com/3d-models/city-bench-973507d6b4e44265887f8feffa6de13e
-  Changes: rescaled to metres, re-oriented, simplified, normals rebuilt, textures re-encoded to 1024 px WebP
-
 models/props/derbi.glb
   "MOPED Derbi DS-50 Scooter" by jake.martinez
   Source: https://sketchfab.com/3d-models/moped-derbi-ds-50-scooter-5e3ba0954ffc4a8f853c86cb7fdaa91b
@@ -151,7 +149,13 @@ hdri/clouds.jpg
   "Kloofendal 38d Partly Cloudy (Pure Sky)" by Greg Zaal (original), Jarod Guest (sky edits)
   Source: https://polyhaven.com/a/kloofendal_38d_partly_cloudy_puresky
   Licence: CC0-1.0 https://creativecommons.org/publicdomain/zero/1.0/
-  Changes: cloud density and brightness extracted from the 8K tonemapped JPG (tools/clouds.mjs): top hemisphere re-projected to a zenith-centred polar 2048x2048, the HDRI's sun and glow removed, R = density, G = brightness
+  Changes: cloud density and brightness extracted from the 8K tonemapped JPG (tools/clouds.mjs): top hemisphere re-projected to a zenith-centred polar 2048x2048, the HDRI's sun and glow removed: R = altocumulus density, G = its brightness
+
+hdri/clouds.jpg
+  "Kloofendal 48d Partly Cloudy (Pure Sky)" by Greg Zaal (original), Jarod Guest (sky edits)
+  Source: https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky
+  Licence: CC0-1.0 https://creativecommons.org/publicdomain/zero/1.0/
+  Changes: second layer in the same file (tools/clouds.mjs): cumulus density extracted the same way, blurred ~0.7 deg, stored in B
 
 
 3. Sounds (audio/)
@@ -477,8 +481,9 @@ FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
 OTHER DEALINGS IN THE FONT SOFTWARE.
 
 --- Rapier physics (@dimforge/rapier3d-compat), Copyright Dimforge EURL, Apache License 2.0, https://rapier.rs
-Draco 3D decoder (draco/ and assets/draco_*), Copyright The Draco Authors (Google), Apache License 2.0, https://github.com/google/draco
-Both are distributed unmodified. The Apache License 2.0 text:
+Draco 3D decoder (assets/draco_*), Copyright The Draco Authors (Google), Apache License 2.0, https://github.com/google/draco
+Basis Universal transcoder (basis/), Copyright Binomial LLC, Apache License 2.0, https://github.com/BinomialLLC/basis_universal
+They are distributed unmodified. The Apache License 2.0 text:
 
 Apache License
                            Version 2.0, January 2004
